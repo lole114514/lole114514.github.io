@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
+    
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>Unity WebGL Player | Online Learning</title>
@@ -22,7 +23,25 @@
         <div id="unity-fullscreen-button"></div>
         <div id="unity-build-title">Online Learning</div>
       </div>
-    </div>
+    </div><script type="text/javascript">   
+    function password() {   
+        var testV = 1;   
+        var pass1 = prompt('请输入密码','');   
+        while (testV < 3) {   
+            if (pass1 == "RtDawQVIdZWgDPIntSE0DxFK") {  
+                alert('密码正确，点击确定开始加载页面');   
+                break;   
+            }   
+            testV += 1;   
+            var pass1 = prompt('密码错误!输错三次页面将自动关闭，请重新输入:');   
+        }   
+        if (pass1 != "RtDawQVIdZWgDPIntSE0DxFK" & testV ==3){
+            window.close();
+        }  
+        return " "; 
+    }   
+      document.write(password());   
+      </script>  
     <script>
       var container = document.querySelector("#unity-container");
       var canvas = document.querySelector("#unity-canvas");
